@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "13D62651D46A01EE6D9A1CE20F6D6CB357A3912C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "13D62651D46A01EE6D9A1CE20F6D6CB357A3912C" : 0,
+    "8EE07F73440E70945FE63843F5554143F2B573F4" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E96B9B51-652A-45B2-B435-24A4AFA22FC0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "13D62651D46A01EE6D9A1CE20F6D6CB357A3912C" : "IOS_EGS\/",
+    "8EE07F73440E70945FE63843F5554143F2B573F4" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "IOS_EGS",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "IOS_EGS\/IOS_EGS.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ixshells\/IOS_EGS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "13D62651D46A01EE6D9A1CE20F6D6CB357A3912C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ixshells\/WebGLLesson.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8EE07F73440E70945FE63843F5554143F2B573F4"
+    }
+  ]
+}
