@@ -7,19 +7,48 @@
 //
 
 #import "ViewController.h"
+#import "GLViewController.h"
 
 @interface ViewController ()
+{
+    
+}
+
+@property(nonatomic, strong)EAGLContext* context;
+@property(nonatomic, strong)GLViewController* glviewController;
 
 @end
 
+
 @implementation ViewController
+
+-(GLViewController *)glviewController
+{
+    if(nil == _glviewController)
+    {
+        _glviewController = [[GLViewController alloc] init];
+    }
+    return _glviewController;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"EGS DEMO";
+    
     self.view.backgroundColor = [UIColor cyanColor];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self initGlView];
 }
+
+
+-(void)initGlView
+{
+    self.glviewController.view.frame = CGRectMake(0, 66, fDeviceWidth, fSelfViewHeight - 166);
+    [self addChildViewController:self.glviewController];
+    [self.view insertSubview:self.glviewController.view atIndex:0];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
