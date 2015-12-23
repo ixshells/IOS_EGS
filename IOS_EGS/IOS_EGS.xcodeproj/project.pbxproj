@@ -10,6 +10,7 @@
 		101ECC011C2940560081D60C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101ECC001C2940560081D60C /* OpenGLES.framework */; };
 		101ECC031C29405E0081D60C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101ECC021C29405E0081D60C /* QuartzCore.framework */; };
 		101ECC071C2949C50081D60C /* GLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 101ECC061C2949C50081D60C /* GLViewController.m */; settings = {ASSET_TAGS = (); }; };
+		103000E41C2A7C810063D5D2 /* ProgramUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 103000E31C2A7C810063D5D2 /* ProgramUtils.m */; settings = {ASSET_TAGS = (); }; };
 		6E5B84611C02DE4600B5BD0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5B84601C02DE4600B5BD0B /* main.m */; };
 		6E5B84641C02DE4600B5BD0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5B84631C02DE4600B5BD0B /* AppDelegate.m */; };
 		6E5B84671C02DE4600B5BD0B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5B84661C02DE4600B5BD0B /* ViewController.m */; };
@@ -40,6 +41,8 @@
 		101ECC021C29405E0081D60C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		101ECC051C2949B50081D60C /* GLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLViewController.h; sourceTree = "<group>"; };
 		101ECC061C2949C50081D60C /* GLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLViewController.m; sourceTree = "<group>"; };
+		103000E21C2A7B580063D5D2 /* ProgramUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgramUtils.h; sourceTree = "<group>"; };
+		103000E31C2A7C810063D5D2 /* ProgramUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgramUtils.m; sourceTree = "<group>"; };
 		6E5B845C1C02DE4600B5BD0B /* IOS_EGS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS_EGS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E5B84601C02DE4600B5BD0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6E5B84621C02DE4600B5BD0B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,6 +104,15 @@
 			path = IOS_EGS;
 			sourceTree = "<group>";
 		};
+		103000E11C2A7AF50063D5D2 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				103000E21C2A7B580063D5D2 /* ProgramUtils.h */,
+				103000E31C2A7C810063D5D2 /* ProgramUtils.m */,
+			);
+			name = Tool;
+			sourceTree = "<group>";
+		};
 		6E5B84531C02DE4600B5BD0B = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +137,7 @@
 		6E5B845E1C02DE4600B5BD0B /* IOS_EGS */ = {
 			isa = PBXGroup;
 			children = (
+				103000E11C2A7AF50063D5D2 /* Tool */,
 				101ECBFF1C293FD80081D60C /* View */,
 				6E5B84621C02DE4600B5BD0B /* AppDelegate.h */,
 				6E5B84631C02DE4600B5BD0B /* AppDelegate.m */,
@@ -297,6 +310,7 @@
 				6E5B84671C02DE4600B5BD0B /* ViewController.m in Sources */,
 				6E5B84641C02DE4600B5BD0B /* AppDelegate.m in Sources */,
 				6E5B84611C02DE4600B5BD0B /* main.m in Sources */,
+				103000E41C2A7C810063D5D2 /* ProgramUtils.m in Sources */,
 				101ECC071C2949C50081D60C /* GLViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
