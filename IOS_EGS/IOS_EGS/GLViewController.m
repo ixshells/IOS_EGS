@@ -8,10 +8,11 @@
 
 #import "GLViewController.h"
 #import "ProgramUtils.h"
+#import "RenderFac.h"
 
 @interface GLViewController()<GLKViewDelegate>
 {
-    GLuint _posLocation;
+   
 }
 
 @property(nonatomic, strong)EAGLContext* context;
@@ -35,10 +36,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"EGS DEMO";
-    
-    self.view.backgroundColor = [UIColor cyanColor];
-    
     //init context
     self.context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
     GLKView* view = (GLKView *)self.view;
@@ -50,10 +47,15 @@
     
     glViewport(0, 0, fSelfViewWidth, fSelfViewHeight);
     
-    glUseProgram(self.programUtil.program);
-    
-    _posLocation = glGetAttribLocation(self.programUtil.program, "v3Position");
+    [self startRender];
 }
+
+-(void)startRender
+{
+    [[RenderFac shareInstance] initRenderUnit:TriangleRenderUnitType];
+    [[RenderFac shareInstance] startRender];
+}
+
 
 
 - (void)didReceiveMemoryWarning {
@@ -66,16 +68,8 @@
     glClearColor(0.0, 0.0, 0.0, 1.0);
     glClear(GL_COLOR_BUFFER_BIT);
     
-    GLfloat vertices[] = {
-        0.0, 1.0, 0.0,
-        -1.0, 0.0, 0.0,
-        1.0, 0.0, 0.0
-    };
-
-    glVertexAttribPointer(_posLocation, 3, GL_FLOAT, GL_FALSE, 0, vertices );
-    glEnableVertexAttribArray(_posLocation);
+    [[RenderFac shareInstance] renderToScene];
     
-    glDrawArrays(GL_TRIANGLES, 0, 3);
 }
 
 -(void)dealloc

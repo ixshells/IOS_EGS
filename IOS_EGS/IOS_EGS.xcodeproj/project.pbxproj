@@ -10,7 +10,10 @@
 		101ECC011C2940560081D60C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101ECC001C2940560081D60C /* OpenGLES.framework */; };
 		101ECC031C29405E0081D60C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101ECC021C29405E0081D60C /* QuartzCore.framework */; };
 		101ECC071C2949C50081D60C /* GLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 101ECC061C2949C50081D60C /* GLViewController.m */; settings = {ASSET_TAGS = (); }; };
-		103000E41C2A7C810063D5D2 /* ProgramUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 103000E31C2A7C810063D5D2 /* ProgramUtils.m */; settings = {ASSET_TAGS = (); }; };
+		109427071C2C269B008C29AF /* ProgramUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 109427061C2C269B008C29AF /* ProgramUtils.m */; settings = {ASSET_TAGS = (); }; };
+		1094270B1C2C2877008C29AF /* BaseRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 1094270A1C2C2877008C29AF /* BaseRender.m */; settings = {ASSET_TAGS = (); }; };
+		1094270E1C2C2CED008C29AF /* RenderFac.m in Sources */ = {isa = PBXBuildFile; fileRef = 1094270D1C2C2CED008C29AF /* RenderFac.m */; settings = {ASSET_TAGS = (); }; };
+		109427111C2C33EA008C29AF /* TriangleRenderUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 109427101C2C33EA008C29AF /* TriangleRenderUnit.m */; settings = {ASSET_TAGS = (); }; };
 		6E5B84611C02DE4600B5BD0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5B84601C02DE4600B5BD0B /* main.m */; };
 		6E5B84641C02DE4600B5BD0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5B84631C02DE4600B5BD0B /* AppDelegate.m */; };
 		6E5B84671C02DE4600B5BD0B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5B84661C02DE4600B5BD0B /* ViewController.m */; };
@@ -41,8 +44,15 @@
 		101ECC021C29405E0081D60C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		101ECC051C2949B50081D60C /* GLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLViewController.h; sourceTree = "<group>"; };
 		101ECC061C2949C50081D60C /* GLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLViewController.m; sourceTree = "<group>"; };
-		103000E21C2A7B580063D5D2 /* ProgramUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgramUtils.h; sourceTree = "<group>"; };
-		103000E31C2A7C810063D5D2 /* ProgramUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgramUtils.m; sourceTree = "<group>"; };
+		109427051C2C269B008C29AF /* ProgramUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProgramUtils.h; path = Tool/ProgramUtils.h; sourceTree = "<group>"; };
+		109427061C2C269B008C29AF /* ProgramUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProgramUtils.m; path = Tool/ProgramUtils.m; sourceTree = "<group>"; };
+		109427081C2C2742008C29AF /* RenderInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RenderInterface.h; path = Graphics/RenderInterface.h; sourceTree = "<group>"; };
+		109427091C2C2841008C29AF /* BaseRender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BaseRender.h; path = Graphics/BaseRender.h; sourceTree = "<group>"; };
+		1094270A1C2C2877008C29AF /* BaseRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseRender.m; path = Graphics/BaseRender.m; sourceTree = "<group>"; };
+		1094270C1C2C2CE0008C29AF /* RenderFac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RenderFac.h; path = Graphics/RenderFac.h; sourceTree = "<group>"; };
+		1094270D1C2C2CED008C29AF /* RenderFac.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RenderFac.m; path = Graphics/RenderFac.m; sourceTree = "<group>"; };
+		1094270F1C2C33A1008C29AF /* TriangleRenderUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TriangleRenderUnit.h; path = Graphics/TriangleRenderUnit.h; sourceTree = "<group>"; };
+		109427101C2C33EA008C29AF /* TriangleRenderUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TriangleRenderUnit.m; path = Graphics/TriangleRenderUnit.m; sourceTree = "<group>"; };
 		6E5B845C1C02DE4600B5BD0B /* IOS_EGS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS_EGS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E5B84601C02DE4600B5BD0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6E5B84621C02DE4600B5BD0B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -107,10 +117,24 @@
 		103000E11C2A7AF50063D5D2 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				103000E21C2A7B580063D5D2 /* ProgramUtils.h */,
-				103000E31C2A7C810063D5D2 /* ProgramUtils.m */,
+				109427051C2C269B008C29AF /* ProgramUtils.h */,
+				109427061C2C269B008C29AF /* ProgramUtils.m */,
 			);
 			name = Tool;
+			sourceTree = "<group>";
+		};
+		109427041C2C2668008C29AF /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				109427081C2C2742008C29AF /* RenderInterface.h */,
+				109427091C2C2841008C29AF /* BaseRender.h */,
+				1094270A1C2C2877008C29AF /* BaseRender.m */,
+				1094270C1C2C2CE0008C29AF /* RenderFac.h */,
+				1094270D1C2C2CED008C29AF /* RenderFac.m */,
+				1094270F1C2C33A1008C29AF /* TriangleRenderUnit.h */,
+				109427101C2C33EA008C29AF /* TriangleRenderUnit.m */,
+			);
+			name = Graphics;
 			sourceTree = "<group>";
 		};
 		6E5B84531C02DE4600B5BD0B = {
@@ -137,6 +161,7 @@
 		6E5B845E1C02DE4600B5BD0B /* IOS_EGS */ = {
 			isa = PBXGroup;
 			children = (
+				109427041C2C2668008C29AF /* Graphics */,
 				103000E11C2A7AF50063D5D2 /* Tool */,
 				101ECBFF1C293FD80081D60C /* View */,
 				6E5B84621C02DE4600B5BD0B /* AppDelegate.h */,
@@ -307,10 +332,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1094270E1C2C2CED008C29AF /* RenderFac.m in Sources */,
 				6E5B84671C02DE4600B5BD0B /* ViewController.m in Sources */,
 				6E5B84641C02DE4600B5BD0B /* AppDelegate.m in Sources */,
 				6E5B84611C02DE4600B5BD0B /* main.m in Sources */,
-				103000E41C2A7C810063D5D2 /* ProgramUtils.m in Sources */,
+				109427071C2C269B008C29AF /* ProgramUtils.m in Sources */,
+				109427111C2C33EA008C29AF /* TriangleRenderUnit.m in Sources */,
+				1094270B1C2C2877008C29AF /* BaseRender.m in Sources */,
 				101ECC071C2949C50081D60C /* GLViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -56,4 +56,16 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{
+    
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+        
+        return UIInterfaceOrientationMaskAll;
+    
+    else  /* iphone */
+        
+        return UIInterfaceOrientationMaskPortrait ;
+    
+}
+
 @end

@@ -134,6 +134,14 @@
     return nil;
 }
 
+-(void)initShaderCode : (NSString *)vertexCode fragementCode : (NSString *)fragmentCode
+{
+    [self.vertexShader loadShader:vertexCode];
+    [self.vertexShader loadShader:fragmentCode];
+    
+    [self link];
+}
+
 -(BOOL)link
 {
     if (0 == self.program
@@ -167,15 +175,16 @@
         return NO;
     }
     
-
-    [self.vertexShader releaseShader];
-    [self.fragmentShader releaseShader];
-    
     return YES;
 }
 
 -(void)releaseProgram
 {
+    [self.vertexShader releaseShader];
+    _vertexShader = nil;
+    [self.fragmentShader releaseShader];
+    _fragmentShader = nil;
+    
     glDeleteProgram(self.program);
     self.program = 0;
 }

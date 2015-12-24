@@ -10,6 +10,7 @@
 #define ProgramUtils_h
 
 
+#pragma mark Class ShaderCodeUtil
 @interface ShaderCodeUtil : NSObject
 
 @property(nonatomic, assign)GLenum shaderType;
@@ -25,6 +26,10 @@
 
 @end
 
+
+
+
+#pragma mark Class ProgramUtil
 @interface ProgramUtil : NSObject
 
 @property(nonatomic, assign)GLuint  program;
@@ -33,6 +38,8 @@
 
 -(instancetype)initWithCode : (NSString *)vertexCode fragmentCode : (NSString *)fragmentCode;
 -(instancetype)initWithShaderPath : (NSString *)vertexFilePath fragmentFilePath : (NSString *)fragmentFilePath;
+
+-(void)initShaderCode : (NSString *)vertexCode fragementCode : (NSString *)fragmentCode;
 
 -(BOOL)link;
 
