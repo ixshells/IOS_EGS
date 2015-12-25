@@ -10,10 +10,13 @@
 		101ECC011C2940560081D60C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101ECC001C2940560081D60C /* OpenGLES.framework */; };
 		101ECC031C29405E0081D60C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101ECC021C29405E0081D60C /* QuartzCore.framework */; };
 		101ECC071C2949C50081D60C /* GLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 101ECC061C2949C50081D60C /* GLViewController.m */; settings = {ASSET_TAGS = (); }; };
+		104942C71C2D0AF700BE2F83 /* BottomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 104942C61C2D0AF700BE2F83 /* BottomViewController.m */; settings = {ASSET_TAGS = (); }; };
+		104942CA1C2D129000BE2F83 /* BottomViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 104942C91C2D129000BE2F83 /* BottomViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		109427071C2C269B008C29AF /* ProgramUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 109427061C2C269B008C29AF /* ProgramUtils.m */; settings = {ASSET_TAGS = (); }; };
 		1094270B1C2C2877008C29AF /* BaseRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 1094270A1C2C2877008C29AF /* BaseRender.m */; settings = {ASSET_TAGS = (); }; };
 		1094270E1C2C2CED008C29AF /* RenderFac.m in Sources */ = {isa = PBXBuildFile; fileRef = 1094270D1C2C2CED008C29AF /* RenderFac.m */; settings = {ASSET_TAGS = (); }; };
 		109427111C2C33EA008C29AF /* TriangleRenderUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 109427101C2C33EA008C29AF /* TriangleRenderUnit.m */; settings = {ASSET_TAGS = (); }; };
+		109427151C2CBC36008C29AF /* ColorTriangleRenderUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 109427141C2CBC36008C29AF /* ColorTriangleRenderUnit.m */; settings = {ASSET_TAGS = (); }; };
 		6E5B84611C02DE4600B5BD0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5B84601C02DE4600B5BD0B /* main.m */; };
 		6E5B84641C02DE4600B5BD0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5B84631C02DE4600B5BD0B /* AppDelegate.m */; };
 		6E5B84671C02DE4600B5BD0B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5B84661C02DE4600B5BD0B /* ViewController.m */; };
@@ -44,6 +47,10 @@
 		101ECC021C29405E0081D60C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		101ECC051C2949B50081D60C /* GLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLViewController.h; sourceTree = "<group>"; };
 		101ECC061C2949C50081D60C /* GLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLViewController.m; sourceTree = "<group>"; };
+		104942C51C2D0AD800BE2F83 /* BottomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BottomViewController.h; sourceTree = "<group>"; };
+		104942C61C2D0AF700BE2F83 /* BottomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomViewController.m; sourceTree = "<group>"; };
+		104942C81C2D127E00BE2F83 /* BottomViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BottomViewCell.h; path = View/BottomViewCell.h; sourceTree = "<group>"; };
+		104942C91C2D129000BE2F83 /* BottomViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BottomViewCell.m; path = View/BottomViewCell.m; sourceTree = "<group>"; };
 		109427051C2C269B008C29AF /* ProgramUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProgramUtils.h; path = Tool/ProgramUtils.h; sourceTree = "<group>"; };
 		109427061C2C269B008C29AF /* ProgramUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProgramUtils.m; path = Tool/ProgramUtils.m; sourceTree = "<group>"; };
 		109427081C2C2742008C29AF /* RenderInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RenderInterface.h; path = Graphics/RenderInterface.h; sourceTree = "<group>"; };
@@ -53,6 +60,8 @@
 		1094270D1C2C2CED008C29AF /* RenderFac.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RenderFac.m; path = Graphics/RenderFac.m; sourceTree = "<group>"; };
 		1094270F1C2C33A1008C29AF /* TriangleRenderUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TriangleRenderUnit.h; path = Graphics/TriangleRenderUnit.h; sourceTree = "<group>"; };
 		109427101C2C33EA008C29AF /* TriangleRenderUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TriangleRenderUnit.m; path = Graphics/TriangleRenderUnit.m; sourceTree = "<group>"; };
+		109427131C2CBC24008C29AF /* ColorTriangleRenderUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ColorTriangleRenderUnit.h; path = Graphics/ColorTriangleRenderUnit.h; sourceTree = "<group>"; };
+		109427141C2CBC36008C29AF /* ColorTriangleRenderUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColorTriangleRenderUnit.m; path = Graphics/ColorTriangleRenderUnit.m; sourceTree = "<group>"; };
 		6E5B845C1C02DE4600B5BD0B /* IOS_EGS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS_EGS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E5B84601C02DE4600B5BD0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6E5B84621C02DE4600B5BD0B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -100,6 +109,8 @@
 		101ECBFF1C293FD80081D60C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				104942C81C2D127E00BE2F83 /* BottomViewCell.h */,
+				104942C91C2D129000BE2F83 /* BottomViewCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -126,15 +137,25 @@
 		109427041C2C2668008C29AF /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				109427121C2C4F30008C29AF /* RenderUnit */,
 				109427081C2C2742008C29AF /* RenderInterface.h */,
 				109427091C2C2841008C29AF /* BaseRender.h */,
 				1094270A1C2C2877008C29AF /* BaseRender.m */,
 				1094270C1C2C2CE0008C29AF /* RenderFac.h */,
 				1094270D1C2C2CED008C29AF /* RenderFac.m */,
-				1094270F1C2C33A1008C29AF /* TriangleRenderUnit.h */,
-				109427101C2C33EA008C29AF /* TriangleRenderUnit.m */,
 			);
 			name = Graphics;
+			sourceTree = "<group>";
+		};
+		109427121C2C4F30008C29AF /* RenderUnit */ = {
+			isa = PBXGroup;
+			children = (
+				1094270F1C2C33A1008C29AF /* TriangleRenderUnit.h */,
+				109427101C2C33EA008C29AF /* TriangleRenderUnit.m */,
+				109427131C2CBC24008C29AF /* ColorTriangleRenderUnit.h */,
+				109427141C2CBC36008C29AF /* ColorTriangleRenderUnit.m */,
+			);
+			name = RenderUnit;
 			sourceTree = "<group>";
 		};
 		6E5B84531C02DE4600B5BD0B = {
@@ -170,6 +191,8 @@
 				6E5B84661C02DE4600B5BD0B /* ViewController.m */,
 				101ECC051C2949B50081D60C /* GLViewController.h */,
 				101ECC061C2949C50081D60C /* GLViewController.m */,
+				104942C51C2D0AD800BE2F83 /* BottomViewController.h */,
+				104942C61C2D0AF700BE2F83 /* BottomViewController.m */,
 				6E5B846B1C02DE4600B5BD0B /* Assets.xcassets */,
 				6E5B84701C02DE4600B5BD0B /* Info.plist */,
 				6E5B845F1C02DE4600B5BD0B /* Supporting Files */,
@@ -336,10 +359,13 @@
 				6E5B84671C02DE4600B5BD0B /* ViewController.m in Sources */,
 				6E5B84641C02DE4600B5BD0B /* AppDelegate.m in Sources */,
 				6E5B84611C02DE4600B5BD0B /* main.m in Sources */,
+				104942CA1C2D129000BE2F83 /* BottomViewCell.m in Sources */,
 				109427071C2C269B008C29AF /* ProgramUtils.m in Sources */,
 				109427111C2C33EA008C29AF /* TriangleRenderUnit.m in Sources */,
 				1094270B1C2C2877008C29AF /* BaseRender.m in Sources */,
+				104942C71C2D0AF700BE2F83 /* BottomViewController.m in Sources */,
 				101ECC071C2949C50081D60C /* GLViewController.m in Sources */,
+				109427151C2CBC36008C29AF /* ColorTriangleRenderUnit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

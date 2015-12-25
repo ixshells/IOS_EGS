@@ -20,14 +20,13 @@
 
 #pragma mark RenderInterface
 
--(ProgramUtil *)programUtil
+
+-(void)initShaderProgram : (NSString *)vertexCode fragmentCode : (NSString *)fragmentCode
 {
     if(nil == _programUtil)
     {
-        _programUtil = [[ProgramUtil alloc] initWithCode:@"attribute vec3 v3Position;void main(void){gl_Position = vec4(v3Position, 1.0);}"
-                                            fragmentCode:@"void main(void){gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0);}"];
+        _programUtil = [[ProgramUtil alloc] initWithCode:vertexCode fragmentCode:fragmentCode];
     }
-    return _programUtil;
 }
 
 -(void)startRender
@@ -43,6 +42,11 @@
 -(void)releaseProgram
 {
     [self.programUtil releaseProgram];
+}
+
+-(void)dealloc
+{
+    [self releaseProgram];
 }
 
 @end

@@ -101,6 +101,18 @@
 
 @implementation ProgramUtil
 
+-(instancetype)init
+{
+    self = [super init];
+    
+    if(nil != self)
+    {
+        
+    }
+    
+    return self;
+}
+
 -(instancetype)initWithCode : (NSString *)vertexCode fragmentCode : (NSString *)fragmentCode
 {
     self = [super init];
@@ -112,6 +124,8 @@
             || nil == fragmentCode
             )
             return nil;
+        
+        [self releaseShader];
         
         self.vertexShader = [[ShaderCodeUtil alloc] initWithShaderCode:vertexCode type:GL_VERTEX_SHADER];
         self.fragmentShader = [[ShaderCodeUtil alloc] initWithShaderCode:fragmentCode type:GL_FRAGMENT_SHADER];
@@ -136,6 +150,11 @@
 
 -(void)initShaderCode : (NSString *)vertexCode fragementCode : (NSString *)fragmentCode
 {
+    if(nil == self.vertexShader)
+        self.vertexShader = [[ShaderCodeUtil alloc] initWithShaderCode:vertexCode type:GL_VERTEX_SHADER];
+    if(nil == self.fragmentShader)
+        self.fragmentShader = [[ShaderCodeUtil alloc] initWithShaderCode:fragmentCode type:GL_FRAGMENT_SHADER];
+    
     [self.vertexShader loadShader:vertexCode];
     [self.vertexShader loadShader:fragmentCode];
     
@@ -176,6 +195,19 @@
     }
     
     return YES;
+}
+
+-(void)releaseShader
+{
+    if(nil != _vertexShader){
+        [_vertexShader releaseShader];
+        _vertexShader = nil;
+    }
+    
+    if(nil != _fragmentShader){
+        [self.fragmentShader releaseShader];
+        _fragmentShader = nil;
+    }
 }
 
 -(void)releaseProgram

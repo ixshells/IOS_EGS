@@ -19,6 +19,9 @@
 
 -(void)startRender
 {
+    [self initShaderProgram:@"attribute vec3 v3Position;void main(void){gl_Position = vec4(v3Position, 1.0);}"
+               fragmentCode:@"void main(void){gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0);}"];
+    
     [super startRender];
     _posLocation = glGetAttribLocation(self.programUtil.program, "v3Position");
 }

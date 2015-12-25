@@ -9,11 +9,12 @@
 #import "RenderFac.h"
 #import "RenderInterface.h"
 #import "TriangleRenderUnit.h"
+#import "ColorTriangleRenderUnit.h"
 
 
 @interface RenderFac()
 {
-    
+    RenderUnitType  _renderUnitType;
 }
 
 
@@ -25,7 +26,6 @@
 
 +(instancetype)shareInstance
 {
-    
     static RenderFac* s_defaultManager;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -38,11 +38,17 @@
 
 -(void)initRenderUnit:(RenderUnitType)type
 {
+    if(type == _renderUnitType)
+        return;
+    
+    _renderUnitType = type;
     switch (type) {
         case TriangleRenderUnitType:
             _renderUnit = [[TriangleRenderUnit alloc] init];
             break;
-            
+        case ColorTriangleRenderUnitType:
+            _renderUnit = [[ColorTriangleRenderUnit alloc] init];
+            break;
         default:
             break;
     }

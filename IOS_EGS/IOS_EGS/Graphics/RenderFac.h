@@ -10,7 +10,8 @@
 #define RenderFac_h
 
 typedef NS_OPTIONS(NSUInteger, RenderUnitType) {
-    TriangleRenderUnitType                  = 0,
+    TriangleRenderUnitType                  = 1,
+    ColorTriangleRenderUnitType             = 2,
 };
 
 @interface RenderFac : NSObject

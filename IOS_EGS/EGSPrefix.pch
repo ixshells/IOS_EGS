@@ -23,6 +23,12 @@
 #import <UIKit/UIKit.h>
 #import <GLKit/GLKit.h>
 
+#define RGB_A(r, g, b, a) ([UIColor colorWithRed:(r)/255.0f \
+green:(g)/255.0f \
+blue:(b)/255.0f \
+alpha:(a)/255.0f])
+
+#define RGB(r, g, b) RGB_A(r, g, b, 255)
 
 
 #endif /* EGSPrefix_pch */

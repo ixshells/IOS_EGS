@@ -16,6 +16,8 @@
 
 @property(nonatomic, strong)ProgramUtil* programUtil;
 
+-(void)initShaderProgram : (NSString *)vertexCode fragmentCode : (NSString *)fragmentCode;
+
 -(void)startRender;
 
 -(void)renderToScene;

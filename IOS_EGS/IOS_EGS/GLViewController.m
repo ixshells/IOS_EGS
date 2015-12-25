@@ -7,7 +7,6 @@
 //
 
 #import "GLViewController.h"
-#import "ProgramUtils.h"
 #import "RenderFac.h"
 
 @interface GLViewController()<GLKViewDelegate>
@@ -16,22 +15,11 @@
 }
 
 @property(nonatomic, strong)EAGLContext* context;
-@property(nonatomic, strong)ProgramUtil* programUtil;
 
 @end
 
 @implementation GLViewController
 
-
--(ProgramUtil *)programUtil
-{
-    if(nil == _programUtil)
-    {
-        _programUtil = [[ProgramUtil alloc] initWithCode:@"attribute vec3 v3Position;void main(void){gl_Position = vec4(v3Position, 1.0);}"
-                                        fragmentCode:@"void main(void){gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0);}"];
-    }
-    return _programUtil;
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -52,10 +40,9 @@
 
 -(void)startRender
 {
-    [[RenderFac shareInstance] initRenderUnit:TriangleRenderUnitType];
+    [[RenderFac shareInstance] initRenderUnit:ColorTriangleRenderUnitType];
     [[RenderFac shareInstance] startRender];
 }
-
 
 
 - (void)didReceiveMemoryWarning {
@@ -69,12 +56,11 @@
     glClear(GL_COLOR_BUFFER_BIT);
     
     [[RenderFac shareInstance] renderToScene];
-    
 }
 
 -(void)dealloc
 {
-    [self.programUtil releaseProgram];
+
 }
 
 @end
