@@ -70,8 +70,6 @@
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    [collectionView deselectItemAtIndexPath:indexPath animated:YES];
-    
     [[RenderFac shareInstance] initRenderUnit:indexPath.row + 1];
     [[RenderFac shareInstance] startRender];
 }

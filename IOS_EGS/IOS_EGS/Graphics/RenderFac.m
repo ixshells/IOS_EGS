@@ -10,6 +10,7 @@
 #import "RenderInterface.h"
 #import "TriangleRenderUnit.h"
 #import "ColorTriangleRenderUnit.h"
+#import "TexTriangleRenderUnit.h"
 
 
 @interface RenderFac()
@@ -48,6 +49,9 @@
             break;
         case ColorTriangleRenderUnitType:
             _renderUnit = [[ColorTriangleRenderUnit alloc] init];
+            break;
+        case TexTriangleRenderUnitType:
+            _renderUnit = [[TexTriangleRenderUnit alloc] init];
             break;
         default:
             break;

@@ -58,6 +58,11 @@
     [[RenderFac shareInstance] renderToScene];
 }
 
+- (void) touchesMoved: (NSSet*) touches withEvent: (UIEvent*) event
+{
+    NSLog(@"touch move");
+}
+
 -(void)dealloc
 {
 

@@ -30,5 +30,15 @@ alpha:(a)/255.0f])
 
 #define RGB(r, g, b) RGB_A(r, g, b, 255)
 
+#define GLES_ATTACH_STRING_L "#ifdef GL_ES\nprecision lowp float;\n#endif\n"
+#define GLES_ATTACH_STRING_M "#ifdef GL_ES\nprecision mediump float;\n#endif\n"
+#define GLES_ATTACH_STRING_H "#ifdef GL_ES\nprecision highp float;\n#endif\n"
+
+#define SHADER_STRING_PRECISION_L(string) GLES_ATTACH_STRING_L  #string
+#define SHADER_STRING_PRECISION_M(string) GLES_ATTACH_STRING_M  #string
+#define SHADER_STRING_PRECISION_H(string) GLES_ATTACH_STRING_H  #string
+
+#define SHADER_STRING(string) #string
+
 
 #endif /* EGSPrefix_pch */

@@ -17,6 +17,9 @@
 		1094270E1C2C2CED008C29AF /* RenderFac.m in Sources */ = {isa = PBXBuildFile; fileRef = 1094270D1C2C2CED008C29AF /* RenderFac.m */; settings = {ASSET_TAGS = (); }; };
 		109427111C2C33EA008C29AF /* TriangleRenderUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 109427101C2C33EA008C29AF /* TriangleRenderUnit.m */; settings = {ASSET_TAGS = (); }; };
 		109427151C2CBC36008C29AF /* ColorTriangleRenderUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 109427141C2CBC36008C29AF /* ColorTriangleRenderUnit.m */; settings = {ASSET_TAGS = (); }; };
+		109C1E2A1C324E8E002E2446 /* TextureUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 109C1E291C324E8E002E2446 /* TextureUtils.m */; settings = {ASSET_TAGS = (); }; };
+		109C1E2D1C325D28002E2446 /* TexTriangleRenderUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 109C1E2C1C325D28002E2446 /* TexTriangleRenderUnit.m */; settings = {ASSET_TAGS = (); }; };
+		109C1E381C32783C002E2446 /* wooden.png in Resources */ = {isa = PBXBuildFile; fileRef = 109C1E371C32783C002E2446 /* wooden.png */; settings = {ASSET_TAGS = (); }; };
 		6E5B84611C02DE4600B5BD0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5B84601C02DE4600B5BD0B /* main.m */; };
 		6E5B84641C02DE4600B5BD0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5B84631C02DE4600B5BD0B /* AppDelegate.m */; };
 		6E5B84671C02DE4600B5BD0B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5B84661C02DE4600B5BD0B /* ViewController.m */; };
@@ -62,6 +65,11 @@
 		109427101C2C33EA008C29AF /* TriangleRenderUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TriangleRenderUnit.m; path = Graphics/TriangleRenderUnit.m; sourceTree = "<group>"; };
 		109427131C2CBC24008C29AF /* ColorTriangleRenderUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ColorTriangleRenderUnit.h; path = Graphics/ColorTriangleRenderUnit.h; sourceTree = "<group>"; };
 		109427141C2CBC36008C29AF /* ColorTriangleRenderUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColorTriangleRenderUnit.m; path = Graphics/ColorTriangleRenderUnit.m; sourceTree = "<group>"; };
+		109C1E281C324E7C002E2446 /* TextureUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TextureUtils.h; path = Tool/TextureUtils.h; sourceTree = "<group>"; };
+		109C1E291C324E8E002E2446 /* TextureUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextureUtils.m; path = Tool/TextureUtils.m; sourceTree = "<group>"; };
+		109C1E2B1C325D16002E2446 /* TexTriangleRenderUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TexTriangleRenderUnit.h; path = Graphics/TexTriangleRenderUnit.h; sourceTree = "<group>"; };
+		109C1E2C1C325D28002E2446 /* TexTriangleRenderUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TexTriangleRenderUnit.m; path = Graphics/TexTriangleRenderUnit.m; sourceTree = "<group>"; };
+		109C1E371C32783C002E2446 /* wooden.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wooden.png; sourceTree = "<group>"; };
 		6E5B845C1C02DE4600B5BD0B /* IOS_EGS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS_EGS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E5B84601C02DE4600B5BD0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6E5B84621C02DE4600B5BD0B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -130,6 +138,8 @@
 			children = (
 				109427051C2C269B008C29AF /* ProgramUtils.h */,
 				109427061C2C269B008C29AF /* ProgramUtils.m */,
+				109C1E281C324E7C002E2446 /* TextureUtils.h */,
+				109C1E291C324E8E002E2446 /* TextureUtils.m */,
 			);
 			name = Tool;
 			sourceTree = "<group>";
@@ -154,8 +164,19 @@
 				109427101C2C33EA008C29AF /* TriangleRenderUnit.m */,
 				109427131C2CBC24008C29AF /* ColorTriangleRenderUnit.h */,
 				109427141C2CBC36008C29AF /* ColorTriangleRenderUnit.m */,
+				109C1E2B1C325D16002E2446 /* TexTriangleRenderUnit.h */,
+				109C1E2C1C325D28002E2446 /* TexTriangleRenderUnit.m */,
 			);
 			name = RenderUnit;
+			sourceTree = "<group>";
+		};
+		109C1E2E1C3269AB002E2446 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				109C1E371C32783C002E2446 /* wooden.png */,
+			);
+			name = Resource;
+			path = IOS_EGS/Resource;
 			sourceTree = "<group>";
 		};
 		6E5B84531C02DE4600B5BD0B = {
@@ -164,6 +185,7 @@
 				6E5B845E1C02DE4600B5BD0B /* IOS_EGS */,
 				6E5B84781C02DE4600B5BD0B /* IOS_EGSTests */,
 				6E5B84831C02DE4600B5BD0B /* IOS_EGSUITests */,
+				109C1E2E1C3269AB002E2446 /* Resource */,
 				101ECC041C2940680081D60C /* FrameWorks */,
 				6E5B845D1C02DE4600B5BD0B /* Products */,
 			);
@@ -330,6 +352,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				109C1E381C32783C002E2446 /* wooden.png in Resources */,
 				6E5B846C1C02DE4600B5BD0B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,8 +379,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1094270E1C2C2CED008C29AF /* RenderFac.m in Sources */,
+				109C1E2D1C325D28002E2446 /* TexTriangleRenderUnit.m in Sources */,
 				6E5B84671C02DE4600B5BD0B /* ViewController.m in Sources */,
 				6E5B84641C02DE4600B5BD0B /* AppDelegate.m in Sources */,
+				109C1E2A1C324E8E002E2446 /* TextureUtils.m in Sources */,
 				6E5B84611C02DE4600B5BD0B /* main.m in Sources */,
 				104942CA1C2D129000BE2F83 /* BottomViewCell.m in Sources */,
 				109427071C2C269B008C29AF /* ProgramUtils.m in Sources */,
