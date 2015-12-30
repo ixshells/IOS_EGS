@@ -12,6 +12,7 @@
 #import "ColorTriangleRenderUnit.h"
 #import "TexTriangleRenderUnit.h"
 #import "Rot_Trans_ScaleRenderUnit.h"
+#import "CubeRenderUnit.h"
 
 
 @interface RenderFac()
@@ -57,6 +58,9 @@
         case RotTransScaleRenderUnitType:
             _renderUnit = [[Rot_Trans_ScaleRenderUnit alloc] init];
             break;
+        case CubeRenderUnitType:
+            _renderUnit = [[CubeRenderUnit alloc] init];
+            break;
         default:
             break;
     }
@@ -70,6 +74,16 @@
 -(void)renderToScene
 {
     [self.renderUnit renderToScene];
+}
+
+-(void)beginTouch : (CGFloat)x Y : (CGFloat)y
+{
+    [self.renderUnit beginTouch:x Y:y];
+}
+
+-(void)touchMoving : (CGFloat)x Y:(CGFloat)y
+{
+    [self.renderUnit touchMoving:x Y:y];
 }
 
 @end

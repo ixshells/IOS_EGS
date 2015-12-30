@@ -36,7 +36,17 @@
 
 -(void)renderToScene
 {
-    
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+}
+
+-(void)beginTouch : (CGFloat)x Y : (CGFloat)y
+{
+    _lastPoint = CGPointMake(x, y);
+}
+
+-(void)touchMoving:(CGFloat)x Y:(CGFloat)y
+{
+
 }
 
 -(void)releaseProgram

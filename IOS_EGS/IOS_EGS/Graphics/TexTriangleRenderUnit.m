@@ -75,13 +75,14 @@ const static char* const s_texTriangle = SHADER_STRING_PRECISION_M
 
 -(void)renderToScene
 {
+    [super renderToScene];
+    
     GLfloat vertices[] = {
         0.0, 1.0, 0.0,
         -1.0, 0.0, 0.0,
         1.0, 0.0, 0.0
     };
     
-    glClearColor(1.0, 1.0, 1.0, 1.0);
     glClear(GL_COLOR_BUFFER_BIT);
     
     glVertexAttribPointer(_posLocation, 3, GL_FLOAT, GL_FALSE, 0, vertices );

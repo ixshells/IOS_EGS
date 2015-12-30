@@ -14,6 +14,7 @@
 		104942CA1C2D129000BE2F83 /* BottomViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 104942C91C2D129000BE2F83 /* BottomViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		107D52F91C3397AA00358B0A /* Rot_Trans_ScaleRenderUnit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 107D52F81C3397AA00358B0A /* Rot_Trans_ScaleRenderUnit.mm */; settings = {ASSET_TAGS = (); }; };
 		107D52FB1C339D4300358B0A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107D52FA1C339D4300358B0A /* CoreGraphics.framework */; };
+		107D52FE1C33B7B700358B0A /* CubeRenderUnit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 107D52FD1C33B7B700358B0A /* CubeRenderUnit.mm */; settings = {ASSET_TAGS = (); }; };
 		109427071C2C269B008C29AF /* ProgramUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 109427061C2C269B008C29AF /* ProgramUtils.m */; settings = {ASSET_TAGS = (); }; };
 		1094270B1C2C2877008C29AF /* BaseRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 1094270A1C2C2877008C29AF /* BaseRender.m */; settings = {ASSET_TAGS = (); }; };
 		1094270E1C2C2CED008C29AF /* RenderFac.m in Sources */ = {isa = PBXBuildFile; fileRef = 1094270D1C2C2CED008C29AF /* RenderFac.m */; settings = {ASSET_TAGS = (); }; };
@@ -62,6 +63,8 @@
 		107D52F71C33979500358B0A /* Rot_Trans_ScaleRenderUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Rot_Trans_ScaleRenderUnit.h; path = Graphics/Rot_Trans_ScaleRenderUnit.h; sourceTree = "<group>"; };
 		107D52F81C3397AA00358B0A /* Rot_Trans_ScaleRenderUnit.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = Rot_Trans_ScaleRenderUnit.mm; path = Graphics/Rot_Trans_ScaleRenderUnit.mm; sourceTree = "<group>"; };
 		107D52FA1C339D4300358B0A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		107D52FC1C33B7A700358B0A /* CubeRenderUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CubeRenderUnit.h; path = Graphics/CubeRenderUnit.h; sourceTree = "<group>"; };
+		107D52FD1C33B7B700358B0A /* CubeRenderUnit.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CubeRenderUnit.mm; path = Graphics/CubeRenderUnit.mm; sourceTree = "<group>"; };
 		109427051C2C269B008C29AF /* ProgramUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProgramUtils.h; path = Tool/ProgramUtils.h; sourceTree = "<group>"; };
 		109427061C2C269B008C29AF /* ProgramUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProgramUtils.m; path = Tool/ProgramUtils.m; sourceTree = "<group>"; };
 		109427081C2C2742008C29AF /* RenderInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RenderInterface.h; path = Graphics/RenderInterface.h; sourceTree = "<group>"; };
@@ -182,6 +185,8 @@
 				109C1E2C1C325D28002E2446 /* TexTriangleRenderUnit.m */,
 				107D52F71C33979500358B0A /* Rot_Trans_ScaleRenderUnit.h */,
 				107D52F81C3397AA00358B0A /* Rot_Trans_ScaleRenderUnit.mm */,
+				107D52FC1C33B7A700358B0A /* CubeRenderUnit.h */,
+				107D52FD1C33B7B700358B0A /* CubeRenderUnit.mm */,
 			);
 			name = RenderUnit;
 			sourceTree = "<group>";
@@ -412,6 +417,7 @@
 				109C1E2A1C324E8E002E2446 /* TextureUtils.m in Sources */,
 				6E5B84611C02DE4600B5BD0B /* main.m in Sources */,
 				104942CA1C2D129000BE2F83 /* BottomViewCell.m in Sources */,
+				107D52FE1C33B7B700358B0A /* CubeRenderUnit.mm in Sources */,
 				109427071C2C269B008C29AF /* ProgramUtils.m in Sources */,
 				109427111C2C33EA008C29AF /* TriangleRenderUnit.m in Sources */,
 				1094270B1C2C2877008C29AF /* BaseRender.m in Sources */,

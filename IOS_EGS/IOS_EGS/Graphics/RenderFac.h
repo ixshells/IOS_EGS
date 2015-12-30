@@ -14,6 +14,7 @@ typedef NS_OPTIONS(NSUInteger, RenderUnitType) {
     ColorTriangleRenderUnitType             = 2,
     TexTriangleRenderUnitType               = 3,
     RotTransScaleRenderUnitType             = 4,
+    CubeRenderUnitType                      = 5,
 };
 
 @interface RenderFac : NSObject
@@ -25,6 +26,10 @@ typedef NS_OPTIONS(NSUInteger, RenderUnitType) {
 -(void)startRender;
 
 -(void)renderToScene;
+
+-(void)beginTouch : (CGFloat)x Y : (CGFloat)y;
+
+-(void)touchMoving : (CGFloat)x Y:(CGFloat)y;
 
 @end
 

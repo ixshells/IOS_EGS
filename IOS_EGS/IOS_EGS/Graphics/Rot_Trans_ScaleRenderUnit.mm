@@ -83,6 +83,8 @@ const static char* const s_fragment_rotTranScale = SHADER_STRING_PRECISION_M
 
 -(void)renderToScene
 {
+    [super renderToScene];
+    
     [self updateData];
     
     GLfloat vertices[] = {

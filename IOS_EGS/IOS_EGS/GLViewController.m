@@ -58,10 +58,24 @@
     [[RenderFac shareInstance] renderToScene];
 }
 
+
+- (void) touchesBegan: (NSSet*) touches withEvent: (UIEvent*) event
+{
+    UITouch* touch = [touches anyObject];
+    CGPoint location  = [touch locationInView: self.view];
+    
+    [[RenderFac shareInstance] beginTouch:location.x Y:location.y];
+}
+
+
 - (void) touchesMoved: (NSSet*) touches withEvent: (UIEvent*) event
 {
-    NSLog(@"touch move");
+    UITouch* touch = [touches anyObject];
+    CGPoint location  = [touch locationInView: self.view];
+
+    [[RenderFac shareInstance] touchMoving:location.x Y:location.y];
 }
+
 
 -(void)dealloc
 {

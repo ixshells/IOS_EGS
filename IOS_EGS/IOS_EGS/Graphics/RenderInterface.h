@@ -16,6 +16,10 @@
 
 -(void)renderToScene;
 
+-(void)beginTouch : (CGFloat)x Y : (CGFloat)y;
+
+-(void)touchMoving : (CGFloat)x Y:(CGFloat)y;
+
 -(void)releaseProgram;
 
 @end

@@ -15,12 +15,17 @@
 @interface BaseRender : NSObject<RenderInterface>
 
 @property(nonatomic, strong)ProgramUtil* programUtil;
+@property(nonatomic, assign)CGPoint lastPoint;
 
 -(void)initShaderProgram : (NSString *)vertexCode fragmentCode : (NSString *)fragmentCode;
 
 -(void)startRender;
 
 -(void)renderToScene;
+
+-(void)beginTouch : (CGFloat)x Y : (CGFloat)y;
+
+-(void)touchMoving : (CGFloat)x Y:(CGFloat)y;
 
 -(void)releaseProgram;
 
