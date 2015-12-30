@@ -12,6 +12,8 @@
 		101ECC071C2949C50081D60C /* GLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 101ECC061C2949C50081D60C /* GLViewController.m */; settings = {ASSET_TAGS = (); }; };
 		104942C71C2D0AF700BE2F83 /* BottomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 104942C61C2D0AF700BE2F83 /* BottomViewController.m */; settings = {ASSET_TAGS = (); }; };
 		104942CA1C2D129000BE2F83 /* BottomViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 104942C91C2D129000BE2F83 /* BottomViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		107D52F91C3397AA00358B0A /* Rot_Trans_ScaleRenderUnit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 107D52F81C3397AA00358B0A /* Rot_Trans_ScaleRenderUnit.mm */; settings = {ASSET_TAGS = (); }; };
+		107D52FB1C339D4300358B0A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107D52FA1C339D4300358B0A /* CoreGraphics.framework */; };
 		109427071C2C269B008C29AF /* ProgramUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 109427061C2C269B008C29AF /* ProgramUtils.m */; settings = {ASSET_TAGS = (); }; };
 		1094270B1C2C2877008C29AF /* BaseRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 1094270A1C2C2877008C29AF /* BaseRender.m */; settings = {ASSET_TAGS = (); }; };
 		1094270E1C2C2CED008C29AF /* RenderFac.m in Sources */ = {isa = PBXBuildFile; fileRef = 1094270D1C2C2CED008C29AF /* RenderFac.m */; settings = {ASSET_TAGS = (); }; };
@@ -20,6 +22,7 @@
 		109C1E2A1C324E8E002E2446 /* TextureUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 109C1E291C324E8E002E2446 /* TextureUtils.m */; settings = {ASSET_TAGS = (); }; };
 		109C1E2D1C325D28002E2446 /* TexTriangleRenderUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 109C1E2C1C325D28002E2446 /* TexTriangleRenderUnit.m */; settings = {ASSET_TAGS = (); }; };
 		109C1E381C32783C002E2446 /* wooden.png in Resources */ = {isa = PBXBuildFile; fileRef = 109C1E371C32783C002E2446 /* wooden.png */; settings = {ASSET_TAGS = (); }; };
+		109C1E3E1C32953A002E2446 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 109C1E3D1C32953A002E2446 /* libstdc++.6.0.9.tbd */; };
 		6E5B84611C02DE4600B5BD0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5B84601C02DE4600B5BD0B /* main.m */; };
 		6E5B84641C02DE4600B5BD0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5B84631C02DE4600B5BD0B /* AppDelegate.m */; };
 		6E5B84671C02DE4600B5BD0B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5B84661C02DE4600B5BD0B /* ViewController.m */; };
@@ -54,6 +57,11 @@
 		104942C61C2D0AF700BE2F83 /* BottomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomViewController.m; sourceTree = "<group>"; };
 		104942C81C2D127E00BE2F83 /* BottomViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BottomViewCell.h; path = View/BottomViewCell.h; sourceTree = "<group>"; };
 		104942C91C2D129000BE2F83 /* BottomViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BottomViewCell.m; path = View/BottomViewCell.m; sourceTree = "<group>"; };
+		107D52F41C3392B600358B0A /* newStaticAssert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = newStaticAssert.h; sourceTree = "<group>"; };
+		107D52F61C33932000358B0A /* newVec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = newVec.h; sourceTree = "<group>"; };
+		107D52F71C33979500358B0A /* Rot_Trans_ScaleRenderUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Rot_Trans_ScaleRenderUnit.h; path = Graphics/Rot_Trans_ScaleRenderUnit.h; sourceTree = "<group>"; };
+		107D52F81C3397AA00358B0A /* Rot_Trans_ScaleRenderUnit.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = Rot_Trans_ScaleRenderUnit.mm; path = Graphics/Rot_Trans_ScaleRenderUnit.mm; sourceTree = "<group>"; };
+		107D52FA1C339D4300358B0A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		109427051C2C269B008C29AF /* ProgramUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProgramUtils.h; path = Tool/ProgramUtils.h; sourceTree = "<group>"; };
 		109427061C2C269B008C29AF /* ProgramUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProgramUtils.m; path = Tool/ProgramUtils.m; sourceTree = "<group>"; };
 		109427081C2C2742008C29AF /* RenderInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RenderInterface.h; path = Graphics/RenderInterface.h; sourceTree = "<group>"; };
@@ -68,8 +76,10 @@
 		109C1E281C324E7C002E2446 /* TextureUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TextureUtils.h; path = Tool/TextureUtils.h; sourceTree = "<group>"; };
 		109C1E291C324E8E002E2446 /* TextureUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextureUtils.m; path = Tool/TextureUtils.m; sourceTree = "<group>"; };
 		109C1E2B1C325D16002E2446 /* TexTriangleRenderUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TexTriangleRenderUnit.h; path = Graphics/TexTriangleRenderUnit.h; sourceTree = "<group>"; };
-		109C1E2C1C325D28002E2446 /* TexTriangleRenderUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TexTriangleRenderUnit.m; path = Graphics/TexTriangleRenderUnit.m; sourceTree = "<group>"; };
+		109C1E2C1C325D28002E2446 /* TexTriangleRenderUnit.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = TexTriangleRenderUnit.m; path = Graphics/TexTriangleRenderUnit.m; sourceTree = "<group>"; };
 		109C1E371C32783C002E2446 /* wooden.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wooden.png; sourceTree = "<group>"; };
+		109C1E3A1C3291C7002E2446 /* Mat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mat.h; sourceTree = "<group>"; };
+		109C1E3D1C32953A002E2446 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		6E5B845C1C02DE4600B5BD0B /* IOS_EGS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS_EGS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E5B84601C02DE4600B5BD0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6E5B84621C02DE4600B5BD0B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -92,6 +102,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				107D52FB1C339D4300358B0A /* CoreGraphics.framework in Frameworks */,
+				109C1E3E1C32953A002E2446 /* libstdc++.6.0.9.tbd in Frameworks */,
 				101ECC031C29405E0081D60C /* QuartzCore.framework in Frameworks */,
 				101ECC011C2940560081D60C /* OpenGLES.framework in Frameworks */,
 			);
@@ -126,6 +138,8 @@
 		101ECC041C2940680081D60C /* FrameWorks */ = {
 			isa = PBXGroup;
 			children = (
+				107D52FA1C339D4300358B0A /* CoreGraphics.framework */,
+				109C1E3D1C32953A002E2446 /* libstdc++.6.0.9.tbd */,
 				101ECC021C29405E0081D60C /* QuartzCore.framework */,
 				101ECC001C2940560081D60C /* OpenGLES.framework */,
 			);
@@ -166,6 +180,8 @@
 				109427141C2CBC36008C29AF /* ColorTriangleRenderUnit.m */,
 				109C1E2B1C325D16002E2446 /* TexTriangleRenderUnit.h */,
 				109C1E2C1C325D28002E2446 /* TexTriangleRenderUnit.m */,
+				107D52F71C33979500358B0A /* Rot_Trans_ScaleRenderUnit.h */,
+				107D52F81C3397AA00358B0A /* Rot_Trans_ScaleRenderUnit.mm */,
 			);
 			name = RenderUnit;
 			sourceTree = "<group>";
@@ -177,6 +193,16 @@
 			);
 			name = Resource;
 			path = IOS_EGS/Resource;
+			sourceTree = "<group>";
+		};
+		109C1E391C3291C7002E2446 /* 3dPart */ = {
+			isa = PBXGroup;
+			children = (
+				107D52F41C3392B600358B0A /* newStaticAssert.h */,
+				109C1E3A1C3291C7002E2446 /* Mat.h */,
+				107D52F61C33932000358B0A /* newVec.h */,
+			);
+			path = 3dPart;
 			sourceTree = "<group>";
 		};
 		6E5B84531C02DE4600B5BD0B = {
@@ -204,6 +230,7 @@
 		6E5B845E1C02DE4600B5BD0B /* IOS_EGS */ = {
 			isa = PBXGroup;
 			children = (
+				109C1E391C3291C7002E2446 /* 3dPart */,
 				109427041C2C2668008C29AF /* Graphics */,
 				103000E11C2A7AF50063D5D2 /* Tool */,
 				101ECBFF1C293FD80081D60C /* View */,
@@ -389,6 +416,7 @@
 				109427111C2C33EA008C29AF /* TriangleRenderUnit.m in Sources */,
 				1094270B1C2C2877008C29AF /* BaseRender.m in Sources */,
 				104942C71C2D0AF700BE2F83 /* BottomViewController.m in Sources */,
+				107D52F91C3397AA00358B0A /* Rot_Trans_ScaleRenderUnit.mm in Sources */,
 				101ECC071C2949C50081D60C /* GLViewController.m in Sources */,
 				109427151C2CBC36008C29AF /* ColorTriangleRenderUnit.m in Sources */,
 			);

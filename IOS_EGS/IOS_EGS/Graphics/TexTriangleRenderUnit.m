@@ -10,7 +10,6 @@
 #import "TextureUtils.h"
 
 
-
 @interface TexTriangleRenderUnit()
 {
     GLuint _posLocation;

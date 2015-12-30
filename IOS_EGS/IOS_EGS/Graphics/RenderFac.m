@@ -11,6 +11,7 @@
 #import "TriangleRenderUnit.h"
 #import "ColorTriangleRenderUnit.h"
 #import "TexTriangleRenderUnit.h"
+#import "Rot_Trans_ScaleRenderUnit.h"
 
 
 @interface RenderFac()
@@ -52,6 +53,9 @@
             break;
         case TexTriangleRenderUnitType:
             _renderUnit = [[TexTriangleRenderUnit alloc] init];
+            break;
+        case RotTransScaleRenderUnitType:
+            _renderUnit = [[Rot_Trans_ScaleRenderUnit alloc] init];
             break;
         default:
             break;
