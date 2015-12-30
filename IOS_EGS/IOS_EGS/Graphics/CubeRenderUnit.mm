@@ -83,10 +83,6 @@ const static char* const s_fragment_cube = SHADER_STRING_PRECISION_M
                             -1,-1,-1,  1,-1,-1,  1,-1, 1,  -1,-1, 1,
                             1,-1,-1,  -1,-1,-1,  -1, 1,-1,  1, 1,-1
                         };
-    
-//    for (int i=0; i<72; i++) {
-//        vertices[i] /= 2.0;
-//    };
     glGenBuffers(1, &_vertexBuffer);
     glBindBuffer(GL_ARRAY_BUFFER, _vertexBuffer);
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
