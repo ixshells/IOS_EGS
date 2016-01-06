@@ -20,3 +20,6 @@
 
 05
 ![05](https://github.com/ixshells/IOS_EGS/blob/master/IOS_EGS/Image/5.jpg)
+
+06
+![05](https://github.com/ixshells/IOS_EGS/blob/master/IOS_EGS/Image/6.jpg)

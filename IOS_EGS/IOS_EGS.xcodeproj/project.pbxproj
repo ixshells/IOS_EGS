@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		101CB9AD1C3575D100300F13 /* TexCubeRenderUnit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 101CB9AC1C3575D100300F13 /* TexCubeRenderUnit.mm */; settings = {ASSET_TAGS = (); }; };
 		101ECC011C2940560081D60C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101ECC001C2940560081D60C /* OpenGLES.framework */; };
 		101ECC031C29405E0081D60C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101ECC021C29405E0081D60C /* QuartzCore.framework */; };
 		101ECC071C2949C50081D60C /* GLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 101ECC061C2949C50081D60C /* GLViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -50,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		101CB9AB1C35735800300F13 /* TexCubeRenderUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TexCubeRenderUnit.h; path = Graphics/TexCubeRenderUnit.h; sourceTree = "<group>"; };
+		101CB9AC1C3575D100300F13 /* TexCubeRenderUnit.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = TexCubeRenderUnit.mm; path = Graphics/TexCubeRenderUnit.mm; sourceTree = "<group>"; };
 		101ECC001C2940560081D60C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		101ECC021C29405E0081D60C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		101ECC051C2949B50081D60C /* GLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLViewController.h; sourceTree = "<group>"; };
@@ -187,6 +190,8 @@
 				107D52F81C3397AA00358B0A /* Rot_Trans_ScaleRenderUnit.mm */,
 				107D52FC1C33B7A700358B0A /* CubeRenderUnit.h */,
 				107D52FD1C33B7B700358B0A /* CubeRenderUnit.mm */,
+				101CB9AB1C35735800300F13 /* TexCubeRenderUnit.h */,
+				101CB9AC1C3575D100300F13 /* TexCubeRenderUnit.mm */,
 			);
 			name = RenderUnit;
 			sourceTree = "<group>";
@@ -424,6 +429,7 @@
 				104942C71C2D0AF700BE2F83 /* BottomViewController.m in Sources */,
 				107D52F91C3397AA00358B0A /* Rot_Trans_ScaleRenderUnit.mm in Sources */,
 				101ECC071C2949C50081D60C /* GLViewController.m in Sources */,
+				101CB9AD1C3575D100300F13 /* TexCubeRenderUnit.mm in Sources */,
 				109427151C2CBC36008C29AF /* ColorTriangleRenderUnit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

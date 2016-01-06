@@ -13,6 +13,7 @@
 #import "TexTriangleRenderUnit.h"
 #import "Rot_Trans_ScaleRenderUnit.h"
 #import "CubeRenderUnit.h"
+#import "TexCubeRenderUnit.h"
 
 
 @interface RenderFac()
@@ -60,6 +61,9 @@
             break;
         case CubeRenderUnitType:
             _renderUnit = [[CubeRenderUnit alloc] init];
+            break;
+        case TexCubeRenderUnitType:
+            _renderUnit = [[TexCubeRenderUnit alloc] init];
             break;
         default:
             break;

@@ -15,6 +15,7 @@ typedef NS_OPTIONS(NSUInteger, RenderUnitType) {
     TexTriangleRenderUnitType               = 3,
     RotTransScaleRenderUnitType             = 4,
     CubeRenderUnitType                      = 5,
+    TexCubeRenderUnitType                   = 6,
 };
 
 @interface RenderFac : NSObject
